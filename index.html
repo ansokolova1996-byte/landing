@@ -1,363 +1,388 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Соколова Анастасия — Product & UX/UI дизайнер</title>
-    <meta
-      name="description"
-      content="Портфолио продуктового и UX/UI дизайнера Анастасии Соколовой. Помогаю цифровым продуктам выглядеть умно и зарабатывать больше."
-    />
-    <meta property="og:title" content="Соколова Анастасия — Product & UX/UI дизайнер" />
-    <meta
-      property="og:description"
-      content="Дизайн цифровых продуктов: SaaS, EdTech, финтех. Исследования, UX, UI, дизайн-системы."
-    />
-    <meta property="og:type" content="website" />
-    <link rel="stylesheet" href="styles/variables.css" />
-    <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/layout.css" />
-    <link rel="stylesheet" href="styles/components.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container site-header__inner">
-        <a href="#hero" class="logo">
-          <span class="logo__name">Соколова Анастасия</span>
-          <span class="logo__tagline">Product & UX/UI дизайнер</span>
-        </a>
-        <nav class="site-nav" aria-label="Главная навигация">
-          <ul class="site-nav__list">
-            <li><a href="#about" class="site-nav__link">Обо мне</a></li>
-            <li><a href="#skills" class="site-nav__link">Навыки</a></li>
-            <li><a href="#portfolio" class="site-nav__link">Проекты</a></li>
-            <li><a href="#testimonials" class="site-nav__link">Отзывы</a></li>
-            <li><a href="#faq" class="site-nav__link">FAQ</a></li>
-            <li><a href="#contact" class="site-nav__link">Контакты</a></li>
-          </ul>
-        </nav>
-        <a href="#contact" class="btn btn--primary site-header__cta">Обсудить проект</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1033" />
+  <title>ЕГПУ • День рождения КЕНТУККИ • КОТЯ</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preload" href="assets/happy-birthday.mp3" as="audio" />
+</head>
+
+<body>
+  <div class="stars"></div>
+  <div class="stars2"></div>
+  <div class="stars3"></div>
+
+  <!-- Музыка -->
+  <audio id="bgMusic" src="assets/happy-birthday.mp3" preload="auto" loop></audio>
+
+  <div id="openInBrowserOverlay" aria-hidden="true">
+    <div class="box">
+      <div style="display:flex; gap:10px; align-items:flex-start; justify-content:space-between;">
+        <div>
+          <div class="label">ВАЖНОЕ УВЕДОМЛЕНИЕ ЕГПУ</div>
+          <h2 style="margin:8px 0 6px; font-size:18px;">Открой в браузере, иначе портал “кривой” 🙃</h2>
+          <div style="color:rgba(255,255,255,.75); line-height:1.35;">
+            Похоже, ты открыла страницу внутри мессенджера/предпросмотра. Там иногда блокируется JavaScript —
+            поэтому кнопки и всплывашки могут работать не как надо.
+          </div>
+        </div>
+        <button id="closeOpenInBrowserOverlay" class="ghost" style="box-shadow:none;">Поняла</button>
       </div>
-    </header>
 
-    <main>
-      <section id="hero" class="section section-hero">
-        <div class="container section-hero__inner">
-          <div class="section-hero__content">
-            <h1 class="section-hero__title">
-              Помогаю цифровым продуктам выглядеть умно и зарабатывать больше
-            </h1>
-            <p class="section-hero__subtitle">
-              Соединяю аналитику, UX-исследования и выразительный визуал, чтобы ваш продукт
-              был понятным, желанным и бизнес-эффективным.
-            </p>
-            <ul class="section-hero__highlights">
-              <li>Фокус на метриках: конверсия, Retention, LTV</li>
-              <li>Опыт в SaaS, EdTech, финтех-проектах</li>
-              <li>Работаю в связке с продактами и разработкой</li>
-            </ul>
-            <div class="section-hero__actions">
-              <a href="#contact" class="btn btn--primary">Запросить консультацию</a>
-              <a href="#portfolio" class="btn btn--ghost">Смотреть портфолио</a>
-            </div>
-          </div>
-          <div class="section-hero__visual" aria-hidden="true">
-            <div class="hero-portrait">
-              <div class="hero-portrait__gradient"></div>
-              <div class="hero-portrait__badge">
-                <span class="badge badge--accent">10+ проектов</span>
-                <span class="hero-portrait__badge-text">SaaS · EdTech · финтех</span>
-              </div>
-            </div>
+      <hr class="hr" />
+
+      <div style="display:grid; gap:12px; grid-template-columns:1fr 1fr;">
+        <div style="border:1px solid rgba(255,255,255,.14); border-radius:14px; padding:12px; background:rgba(0,0,0,.18);">
+          <b>iPhone (Safari)</b>
+          <div style="margin-top:6px; color:rgba(255,255,255,.75);">
+            1) Нажми <b>⋯</b> или “Поделиться”<br/>
+            2) Выбери <b>Open in Safari</b>
           </div>
         </div>
-      </section>
-
-      <section id="about" class="section section-for-whom">
-        <div class="container">
-          <h2 class="section__title">Кому подойдёт сотрудничество</h2>
-          <p class="section__subtitle">
-            Если вы строите цифровой продукт и вам важно, чтобы дизайн работал на метрики, а не только на визуал.
-          </p>
-          <div class="cards-grid cards-grid--for-whom">
-            <article class="card card--for-whom">
-              <h3 class="card__title">Продуктовый стартап</h3>
-              <p class="card__text">
-                Помогу быстро собрать проверяемый прототип, навести порядок в логике и подготовить презентабельный вид для инвесторов.
-              </p>
-            </article>
-            <article class="card card--for-whom">
-              <h3 class="card__title">Зрелый SaaS-продукт</h3>
-              <p class="card__text">
-                Пересоберу сложный интерфейс, улучшу онбординг, поработаю с воронкой и UX-фрикциями, влияющими на Retention.
-              </p>
-            </article>
-            <article class="card card--for-whom">
-              <h3 class="card__title">Малый бизнес и сервисы</h3>
-              <p class="card__text">
-                Создам понятный лендинг или личный кабинет, который прогревает, отвечает на вопросы и повышает конверсию в заявку.
-              </p>
-            </article>
-            <article class="card card--for-whom">
-              <h3 class="card__title">Личный бренд эксперта</h3>
-              <p class="card__text">
-                Оформлю экспертный сайт или образовательный продукт так, чтобы он транслировал доверие и экспертность.
-              </p>
-            </article>
+        <div style="border:1px solid rgba(255,255,255,.14); border-radius:14px; padding:12px; background:rgba(0,0,0,.18);">
+          <b>Android (Chrome)</b>
+          <div style="margin-top:6px; color:rgba(255,255,255,.75);">
+            1) Нажми <b>⋮</b><br/>
+            2) Выбери <b>Open in Chrome</b>
           </div>
         </div>
-      </section>
-
-      <section class="section section-process">
-        <div class="container">
-          <h2 class="section__title">Что внутри сотрудничества</h2>
-          <p class="section__subtitle">
-            Структурированный процесс от диагностики до внедрения, чтобы решения были прозрачными и управляемыми.
-          </p>
-          <div class="process-grid">
-            <article class="card card--process">
-              <h3 class="card__title">1. Диагностика и фокус</h3>
-              <p class="card__text">
-                Разбираем продукт, аудиторию и текущие метрики, фиксируем гипотезы и точки роста дизайна.
-              </p>
-            </article>
-            <article class="card card--process">
-              <h3 class="card__title">2. UX-структура и сценарии</h3>
-              <p class="card__text">
-                Простраиваю CJM, ключевые пользовательские сценарии, создаю прототипы и карту экранов.
-              </p>
-            </article>
-            <article class="card card--process">
-              <h3 class="card__title">3. Визуальный язык и UI</h3>
-              <p class="card__text">
-                Формирую визуальную концепцию, дизайн-систему и собираю интерфейсы, готовые к передаче в разработку.
-              </p>
-            </article>
-            <article class="card card--process">
-              <h3 class="card__title">4. Внедрение и поддержка</h3>
-              <p class="card__text">
-                Сопровождаю внедрение, помогаю команде с гайдами и правками по результатам первых метрик.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="skills" class="section section-skills">
-        <div class="container">
-          <h2 class="section__title">Навыки и инструменты</h2>
-          <div class="skills-grid">
-            <div class="skills-column">
-              <h3 class="skills-column__title">Продуктовый дизайн</h3>
-              <ul class="skills-list">
-                <li>Постановка целей и метрик</li>
-                <li>Работа с воронками и онбордингом</li>
-                <li>Гипотезы и A/B‑эксперименты</li>
-              </ul>
-            </div>
-            <div class="skills-column">
-              <h3 class="skills-column__title">UX‑исследования</h3>
-              <ul class="skills-list">
-                <li>Интервью и юзабилити‑тесты</li>
-                <li>CJM и JTBD‑подход</li>
-                <li>Анализ количественных данных</li>
-              </ul>
-            </div>
-            <div class="skills-column">
-              <h3 class="skills-column__title">UI‑концепции</h3>
-              <ul class="skills-list">
-                <li>Дизайн десктопных и мобильных интерфейсов</li>
-                <li>Системы состояний и микровзаимодействия</li>
-                <li>Работа с иллюстрациями и иконками</li>
-              </ul>
-            </div>
-            <div class="skills-column">
-              <h3 class="skills-column__title">Дизайн‑системы</h3>
-              <ul class="skills-list">
-                <li>Библиотеки компонентов в Figma</li>
-                <li>Токены, гриды, типографика</li>
-                <li>Документация для команды</li>
-              </ul>
-            </div>
-          </div>
-          <div class="skills-tools">
-            <span class="badge">Figma</span>
-            <span class="badge">FigJam</span>
-            <span class="badge">Miro</span>
-            <span class="badge">Notion</span>
-            <span class="badge">Maze</span>
-          </div>
-        </div>
-      </section>
-
-      <section id="portfolio" class="section section-portfolio">
-        <div class="container">
-          <h2 class="section__title">Выбранные проекты</h2>
-          <p class="section__subtitle">
-            Несколько кейсов из SaaS, EdTech и смежных сфер. Подробный разбор по запросу.
-          </p>
-          <div id="portfolio-grid" class="portfolio-grid" aria-live="polite"></div>
-        </div>
-      </section>
-
-      <section id="testimonials" class="section section-testimonials">
-        <div class="container">
-          <h2 class="section__title">Отзывы и менторство</h2>
-          <div class="testimonials-slider" aria-roledescription="carousel">
-            <div class="testimonials-slider__track" data-testimonials-track>
-              <!-- Карточки отзывов рендерятся JS -->
-            </div>
-            <div class="testimonials-slider__controls">
-              <button
-                class="btn-icon"
-                type="button"
-                aria-label="Предыдущий отзыв"
-                data-testimonials-prev
-              >
-                ‹
-              </button>
-              <button
-                class="btn-icon"
-                type="button"
-                aria-label="Следующий отзыв"
-                data-testimonials-next
-              >
-                ›
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="faq" class="section section-faq">
-        <div class="container">
-          <h2 class="section__title">FAQ</h2>
-          <div class="faq-list" data-accordion>
-            <article class="faq-item">
-              <button class="faq-item__header" aria-expanded="false">
-                <span class="faq-item__question">С чего начинается работа над проектом?</span>
-                <span class="faq-item__icon">+</span>
-              </button>
-              <div class="faq-item__content" hidden>
-                Начинаем с короткого созвона, где обсуждаем цели, продукт и ограничения. После этого
-                фиксируем формат работы и таймлайн.
-              </div>
-            </article>
-            <article class="faq-item">
-              <button class="faq-item__header" aria-expanded="false">
-                <span class="faq-item__question">Если у нас нет готового ТЗ?</span>
-                <span class="faq-item__icon">+</span>
-              </button>
-              <div class="faq-item__content" hidden>
-                Помогу структурировать запрос: собираем вводные, формулируем задачи дизайна и
-                оформляем понятный для команды документ.
-              </div>
-            </article>
-            <article class="faq-item">
-              <button class="faq-item__header" aria-expanded="false">
-                <span class="faq-item__question">Как происходит коммуникация в процессе?</span>
-                <span class="faq-item__icon">+</span>
-              </button>
-              <div class="faq-item__content" hidden>
-                Работаем в понятных слотах: еженедельные синки, прогресс‑отчёты в Notion, обсуждения
-                в Telegram или Slack.
-              </div>
-            </article>
-            <article class="faq-item">
-              <button class="faq-item__header" aria-expanded="false">
-                <span class="faq-item__question">Сколько стоит проект и от чего зависит бюджет?</span>
-                <span class="faq-item__icon">+</span>
-              </button>
-              <div class="faq-item__content" hidden>
-                Стоимость зависит от объёма экранов, глубины исследований и необходимости дизайн‑системы.
-                После короткого брифа смогу назвать коридор бюджета.
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="section section-contact">
-        <div class="container section-contact__inner">
-          <div class="section-contact__content">
-            <h2 class="section__title">Обсудим ваш проект?</h2>
-            <p class="section__subtitle">
-              Работаю с продуктами на стадиях от pre‑MVP до масштабирования. Напишите пару строк о
-              задаче — вернусь с идеями по формату и следующим шагам.
-            </p>
-            <ul class="contact-highlights">
-              <li>Фокус на долгосрочном эффекте, а не на «красивых экранах»</li>
-              <li>Понимание процессов разработки и продуктовой аналитики</li>
-              <li>Прозрачный процесс и открытая коммуникация</li>
-            </ul>
-          </div>
-          <form class="contact-form" novalidate>
-            <div class="form-field">
-              <label for="name">Имя</label>
-              <input id="name" name="name" type="text" required />
-            </div>
-            <div class="form-field">
-              <label for="project-type">Тип проекта</label>
-              <select id="project-type" name="project-type" required>
-                <option value="">Выберите вариант</option>
-                <option value="saas">SaaS / веб‑сервис</option>
-                <option value="landing">Лендинг / промо‑страница</option>
-                <option value="mobile">Мобильное приложение</option>
-                <option value="education">Образовательный продукт</option>
-                <option value="other">Другое</option>
-              </select>
-            </div>
-            <div class="form-field">
-              <label for="budget">Ориентировочный бюджет</label>
-              <select id="budget" name="budget" required>
-                <option value="">Выберите диапазон</option>
-                <option value="low">до 80 000 ₽</option>
-                <option value="mid">80 000–150 000 ₽</option>
-                <option value="high">150 000–300 000 ₽</option>
-                <option value="custom">От 300 000 ₽ и выше</option>
-              </select>
-            </div>
-            <div class="form-field">
-              <label for="description">Кратко о задаче</label>
-              <textarea id="description" name="description" rows="4" required></textarea>
-            </div>
-            <div class="form-field">
-              <label for="contacts">Контакты (email или Telegram)</label>
-              <input id="contacts" name="contacts" type="text" required />
-            </div>
-            <button type="submit" class="btn btn--primary contact-form__submit">
-              Отправить заявку
-            </button>
-            <p class="contact-form__note">
-              Заявка уходит напрямую мне. Отвечаю в течение 1–2 рабочих дней.
-            </p>
-            <p class="contact-form__success" hidden>
-              Спасибо! Заявка отправлена. Я свяжусь с вами в ближайшее время.
-            </p>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container site-footer__inner">
-        <span class="site-footer__author">© <span id="year"></span> Соколова Анастасия</span>
-        <div class="site-footer__links">
-          <a href="#" class="site-footer__link">Behance</a>
-          <a href="#" class="site-footer__link">Dribbble</a>
-          <a href="#" class="site-footer__link">Telegram</a>
-        </div>
-        <span class="site-footer__note">
-          Дизайн‑портфолио. Не является публичной офертой.
-        </span>
       </div>
+
+      <div style="margin-top:12px; color:rgba(255,255,255,.65); font-size:12px;">
+        Когда откроешь в Safari/Chrome — всё будет работать как на компьютере.
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand">
+        <div class="crest" aria-hidden="true"></div>
+        <div class="titleblock">
+          <b>ЕГПУ — Единый Государственный Праздничный Услугатор</b>
+          <span>Портал межпланетарных поздравлений • режим: космос</span>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="pill">Дело № <strong class="mono" id="caseId">KT-XX-0000</strong></div>
+        <div class="pill">Объект: <strong>КОТЯ</strong></div>
+
+        <div class="progresswrap">
+          <div class="progressrow">
+            <span>Собрано печатей: <b id="sealCount">0</b>/6</span>
+            <span class="mono" id="pct">0%</span>
+          </div>
+          <div class="progressbar" aria-label="progress">
+            <div class="bar" id="bar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <h1 class="h1">КОТЯ • ГОС-ПОЗДРАВЛЕНИЕ 🛰️🐶🍗</h1>
+          <div class="statusbig">СТАТУС: “ВНИМАНИЕ! ДЕНЬ РОЖДЕНИЯ КЕНТУККИ”</div>
+
+          <div class="warning">
+            Внимание: портал содержит ненормативную лексику. Запрещено читать тем, кому всегда 17.
+            Если решишь прочитать - держись крепче, обезьянка.
+          </div>
+
+          <div class="actions">
+            <button class="danger" data-action="dontpress">Не нажимать (я знаю, что ты все равно нажмешь)</button>
+            <button class="primary" data-action="musicToggle" id="musicToggleBtn">Включить космо-музыку</button>
+          </div>
+
+          <p class="sub">
+            Инструкция: пройди блоки ниже по порядку, собери <b>6 печатей</b> и получи итоговый сертификат в самом низу сайта.
+          </p>
+        </div>
+
+        <div class="card" style="grid-column: span 12; margin:0; align-self:stretch;">
+          <div class="head">
+            <div>
+              <h3>Сводка по делу</h3>
+              <small>автоматически • официально • по любви</small>
+            </div>
+            <span class="stamp warn" id="mainStamp">ОЖИДАЕТ ПЕЧАТЕЙ</span>
+          </div>
+          <div class="body">
+            <div class="kpi">
+              <div class="k">
+                <div class="v">КОСМОС</div>
+                <div class="l">Сфера обслуживания</div>
+              </div>
+              <div class="k">
+                <div class="v">КОТЯ</div>
+                <div class="l">Главное явление</div>
+              </div>
+              <div class="k">
+                <div class="v">КЕНТУККИ</div>
+                <div class="l">Гос-статус дня</div>
+              </div>
+            </div>
+
+            <div class="hr"></div>
+            <div class="mono">
+              Финальная кнопка активируется при <b>6/6</b> печатях.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODULES (strict order 1..6) -->
+    <section class="grid" aria-label="modules">
+
+      <!-- 1) FOOT -->
+      <div class="card span6" id="mod-foot">
+        <div class="head">
+          <div>
+            <h3>1) Пяткой в глаз или…..</h3>
+            <small>Отдел компенсаций и извинений (архив 2-летней давности)</small>
+          </div>
+          <span class="stamp" id="seal-foot" style="display:none;">ПЕЧАТЬ ПОЛУЧЕНА</span>
+        </div>
+        <div class="body">
+          <div>
+            Инцидент зарегистрирован: 2 года назад оператор портала (то есть я) забыл(а) про день рождения Коти.<br/>
+            Вместо поздравления был отправлен документ формата: <b>“грязная пятка”</b>.<br/>
+            Классификация: <b>несанкционированная пятка</b>. Уровень угрозы: <b>смешно-стыдно</b>.
+          </div>
+
+          <div class="actions" style="margin-top:12px;">
+            <button class="primary" data-action="footComp">Начислить моральную компенсацию</button>
+          </div>
+
+          <div class="hr"></div>
+          <div class="mono">
+            Пояснение: “Оператор обязуется впредь отправлять поздравления, а не грязные пятки.”
+          </div>
+        </div>
+      </div>
+
+      <!-- 2) ENGLISH -->
+      <div class="card span6" id="mod-english">
+        <div class="head">
+          <div>
+            <h3>2) Английский модуль</h3>
+            <small>Лингвистический отдел: международные отношения</small>
+          </div>
+          <span class="stamp" id="seal-english" style="display:none;">ПЕЧАТЬ ПОЛУЧЕНА</span>
+        </div>
+        <div class="body">
+          <div class="mono" style="font-size:14px; color: var(--ink); font-weight:1000;">
+            “АНГЛИЙСКИЙ: ХАУ ДУ Ю ДУУУУУ”
+          </div>
+
+          <div class="actions" style="margin-top:12px;">
+            <button class="primary" data-action="english">Ответить по протоколу</button>
+          </div>
+
+          <div class="reveal" id="englishReveal">
+            <div class="mono" style="white-space:pre-wrap;">
+Пожелание для Коти:
+‘…не иди в пиздуууу’
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3) VENUS -->
+      <div class="card span7" id="mod-venus">
+        <div class="head">
+          <div>
+            <h3>3) Межпланетарный масштаб</h3>
+            <small>Венера • геология • официальная жара</small>
+          </div>
+          <span class="stamp" id="seal-venus" style="display:none;">ПЕЧАТЬ ПОЛУЧЕНА</span>
+        </div>
+        <div class="body">
+          <div class="kpi">
+            <div class="k">
+              <div class="v">🔥</div>
+              <div class="l">Температура Венеры: очень горячо</div>
+            </div>
+            <div class="k">
+              <div class="v">💅🔥</div>
+              <div class="l">Температура именинницы: ещё горячее</div>
+            </div>
+            <div class="k">
+              <div class="v">🪨 10</div>
+              <div class="l">Твёрдость по Моосу: 10 баллов</div>
+            </div>
+          </div>
+
+          <div class="hr"></div>
+
+          <div class="mono" style="white-space:pre-wrap; color: var(--ink);">
+Давление атмосферы: серьёзное
+Давление харизмы Коти: сильнее
+
+“Зафиксировано явление: от именинницы поднимается high треше,
+что неминуемо ведёт к high плеже.
+(Наука объяснить не может. Но подтверждает.)”
+          </div>
+
+          <div class="actions" style="margin-top:12px;">
+            <button class="primary" data-action="venusSeal">Зафиксировать явление (поставить печать)</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4) KENTUCKY SERVICE -->
+      <div class="card span5" id="mod-kentucky">
+        <div class="head">
+          <div>
+            <h3>4) Управление по делам Кентукки</h3>
+            <small>КЕНТУККИ как государственная услуга</small>
+          </div>
+          <span class="stamp" id="seal-kentucky" style="display:none;">ПЕЧАТЬ ПОЛУЧЕНА</span>
+        </div>
+        <div class="body">
+          <div class="mono" style="white-space:pre-wrap; color: var(--ink);">
+“Услуга оказана: КЕНТУККИ.
+Срок исполнения: немедленно.”
+          </div>
+
+          <div class="actions" style="margin-top:12px;">
+            <button class="primary" data-action="kentuckySeal">Поставить печать</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5) CARLISLE -->
+      <div class="card span12" id="mod-carlisle">
+        <div class="head">
+          <div>
+            <h3>5) Отдел Карлайла Каллена</h3>
+            <small>вампирский контроль качества</small>
+          </div>
+          <span class="stamp" id="seal-carlisle" style="display:none;">ПЕЧАТЬ ПОЛУЧЕНА</span>
+        </div>
+        <div class="body">
+          <div class="actions" style="margin-top:0;">
+            <button class="primary" data-action="carlisle">Проверить уровень</button>
+          </div>
+
+          <div class="reveal" id="carlisleReveal">
+            <div class="mono" style="white-space:pre-wrap;">
+✅ 100%
+“Я бы не превратил тебя в вампира...ты и так совершенна”
+            </div>
+          </div>
+
+          <div class="hr"></div>
+          <div class="mono">
+            Подсказка: печать <b>ОКСАНА-ПРОТОКОЛ</b> выдаётся через кнопку “Не нажимать” вверху 👀
+          </div>
+        </div>
+      </div>
+
+      <!-- 6) FINAL BUTTON CARD -->
+      <div class="card span12" id="mod-final">
+        <div class="head">
+          <div>
+            <h3>6) Итоговый сертификат</h3>
+            <small>доступ откроется после 6/6 печатей</small>
+          </div>
+          <span class="stamp warn" id="finalStamp">ЗАКРЫТО</span>
+        </div>
+        <div class="body">
+          <div class="mono" style="color: var(--ink);">
+            Нажми кнопку ниже, когда соберёшь все печати.
+          </div>
+          <div class="actions" style="margin-top:12px;">
+            <button class="primary" data-action="final" id="finalBtn" disabled>Получить итоговый сертификат</button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <footer>
+      ЕГПУ не несёт ответственности за резкое повышение настроения и межпланетарные эффекты Коти.
+      <br/>Версия портала: 3.2 • Режим: «космос» • Лицензия: «по дружбе»
     </footer>
 
-    <button class="floating-cta btn btn--primary" type="button" data-floating-cta>
-      Написать мне
-    </button>
+  </div>
 
-    <script src="scripts/portfolio-data.js"></script>
-    <script src="scripts/main.js"></script>
-  </body>
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+
+  <div class="overlay" id="oksanaOverlay" aria-modal="true" role="dialog">
+    <div class="modal">
+      <div class="mhead">
+        <b>СИГНАЛ ТРЕВОГИ/РАДОСТИ</b>
+        <div class="actions" style="margin:0;">
+          <button class="ghost" data-action="closeOksana" style="box-shadow:none;">Закрыть</button>
+        </div>
+      </div>
+      <div class="mbody">
+        <h2 class="oksanaBig blink">ОКСАНА!!!</h2>
+        <div class="mono" style="white-space:pre-wrap; color: var(--ink);">
+“Ложная тревога. Это всё ещё КОТЯ. Но протокол запущен.”
+        </div>
+        <div class="actions" style="margin-top:12px;">
+          <button class="primary" data-action="closeOksana">Окей</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay" id="finalOverlay" aria-modal="true" role="dialog">
+    <div class="modal">
+      <div class="mhead">
+        <b>ИТОГОВЫЙ СЕРТИФИКАТ</b>
+        <div class="actions" style="margin:0;">
+          <button class="ghost" data-action="closeFinal" style="box-shadow:none;">Закрыть</button>
+        </div>
+      </div>
+      <div class="mbody">
+        <div class="cert">
+          <h2>ИТОГОВЫЙ СЕРТИФИКАТ ВЫДАН</h2>
+          <div class="sealbig">ЕГПУ • УТВЕРЖДЕНО</div>
+
+          <div class="hr"></div>
+
+          <div style="white-space:pre-wrap; color: var(--ink);">
+Настоящим подтверждается, что гражданка КОТЯ (Катя) является:
+— человеком невероятной силы, ума и красоты;
+— любимицей собак;
+— настоящим Кентукки;
+— межпланетарной легендой;
+— совершенством по версии Карлайла Каллена;
+— и вообще — самой лучшей.
+          </div>
+
+          <div class="hr"></div>
+
+          <div style="white-space:pre-wrap; color: var(--ink);">
+Котя, с днём рождения 🤍
+Я очень рада, что ты у меня есть.
+Ты умная, сильная, настоящая — и рядом с тобой всегда легче и теплее.
+Пусть у тебя будет много радости, спокойствия внутри, классных людей рядом и моментов, когда хочется улыбаться просто так.
+Я тобой горжусь и очень тебя люблю.
+          </div>
+
+          <div class="actions" style="margin-top:12px;">
+            <button class="primary" data-action="hug">Получить обнимашку немедленно</button>
+            <button class="ghost" data-action="closeFinal" style="box-shadow:none;">Закрыть</button>
+          </div>
+        </div>
+
+        <div class="mono" style="margin-top:10px; color: var(--muted);">
+          (Это официальный документ. Печать настоящая. Почти.)
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
 </html>
